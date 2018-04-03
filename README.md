@@ -36,13 +36,24 @@ __Status__: *In progress*
 ____
 
 # Vero's Dazzling Cafe Experience
-## Purpose of the project
-### UX approach 
-- #### Strategy
-- #### Scope
-- #### Structure 
-- #### Skeleton
-- #### Surface
+## Purpose of the project and UX approach  
+- ### Strategy
+The purpose of this website is to advertise and inform potential customers about coffee tastings and coffee-related events. This website is the virtual access for customers to prepare their visit to the Dazzling Cafe. 
+- ### Scope
+    Features to be included:
+⋅⋅⋅ Pure CSS dropdown menu in mobile view
+⋅⋅⋅ Full CSS image hover animation
+- ### Structure 
+Header|About| Course/Tastings|Testimonials|Contact|Footer
+---|---|---|---|---|---|
+Catch Phrase|Pictures|Table listing all possible courses with the relevant cost|Customer testimonial|Map possible|Social media icons|
+Button leading to Testimonials||Allergy disclosure|Request for customer to leave reviews on their social media|Business Hours||
+||||Email address (star barista and cafe owner)||
+
+- ### Skeleton
+    Please review [the mobile wireframe](ux/mobile_usercentric.pdf) and [the desktop wireframe](ux/desktop_usercentric.pdf).
+- ### Surface
+    In progress.
 
 ## Functionality of the project
 I.e. what does this website offer/allow/show when visited
@@ -53,7 +64,7 @@ Present the concept of a coffee tasting experience
 * [#] library one - styling sheet
 * [#] library two - javascript sheet
 * [#] library three - structural xyz
-* [#] testing facility - xyz
+* [#] Code Institute - Pure CSS dropdown
 
 ## Testing
 ### Test 1
