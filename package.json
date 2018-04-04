@@ -1,0 +1,23 @@
+{
+    "name": "ci_usercentric",
+    "version": "1.0.0",
+    "description": "Milestone Project User Centric Frontend Development",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/nuagesdencre/CI_UserCentric.git"
+    },
+    "author": "vsq",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/nuagesdencre/CI_UserCentric/issues"
+    },
+    "homepage": "https://github.com/nuagesdencre/CI_UserCentric#readme",
+    "devDependencies": {
+      "node-sass": "^4.8.3"
+    }
+  }
+  
