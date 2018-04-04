@@ -21,33 +21,34 @@
         </h1>
         <div class="nav--dropdown">
             <button class="btn--dropdown">
-                <i class="fas fa-coffee fa-2x"></i> Dazzling Cafe</button>
+                <i class="fas fa-coffee"></i> Dazzling Cafe</button>
 
             <ul class="nav__list">
                 <li>
-                    <a href="#" class="dropdownLink" target="#top"> <i class="fas fa-angle-double-up"></i>Back to Top</a>
+                    <a class="dropdownLink" href="#top">
+                        <i class="fas fa-angle-double-up"></i>Back to Top</a>
                 </li>
                 <li>
-                    <a href="#" class="dropdownLink" target="#about">About</a>
+                    <a class="dropdownLink" href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#" class="dropdownLink" target="#menu">Courses & Menu</a>
+                    <a class="dropdownLink" href="#menu">Courses & Menu</a>
                 </li>
                 <li>
-                    <a href="#" class="dropdownLink" target="#testimonials">Testimonials</a>
+                    <a class="dropdownLink" href="#testimonials">Testimonials</a>
                 </li>
                 <li>
-                    <a href="#" class="dropdownLink" target="#upcoming">Upcoming</a>
+                    <a class="dropdownLink" href="#upcoming">Upcoming</a>
                 </li>
                 <li>
-                    <a href="#" class="dropdownLink" target="#contact">Contact</a>
+                    <a class="dropdownLink" href="#contact">Contact</a>
                 </li>
             </ul>
 
         </div>
     </navbar>
 
-    <header class="header" name="top">
+    <header class="header" id="top">
 
         <div class="header__text-box container">
             <h1 class="header__top">
@@ -56,13 +57,15 @@
             </h1>
             <p class="header__mid">
                 <span>But you won't settle for something subpar.
-                    <strong>We hear you.</strong>
+                    <span>
+                        <strong>We hear you.</strong>
+                    </span>
                 </span>
                 Choose your your coffee experience --
                 <span>we guarantee you'll be impressed.</span>
             </p>
             <div class="header__btn">
-                <a href="#" class="btn">Give us a try!</a>
+                <a href="#menu" class="btn">Give us a try!</a>
             </div>
 
         </div>
@@ -70,7 +73,7 @@
     </header>
 
     <main>
-        <section class="about" name="about">
+        <section class="about" id="about">
             <h2 class="about__header">
                 About
             </h2>
@@ -100,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="menu" name="menu">
+        <section class="menu" id="menu">
             <h2 class="menu__header">
                 Coffee Tastings & Courses
             </h2>
@@ -182,36 +185,57 @@
                 <div class="container">
 
                     <div class="col-3 menu__col">
-                        We offer snacks and freshly baked goods on a daily basis. We can cater to vegan, lactose-intolerant and coeliac/gluten-intolerant customers.
+                        We offer snacks and freshly baked goods on a daily basis. We can cater to vegan, lactose-intolerant and coeliac/gluten-intolerant
+                        customers.
                     </div>
                     <div class="col-3 menu__col">
-                            Please note that we try to clearly label and inform you in the presence of allergens in our drinks and snacks, however our kitchen and coffee bar can allow for cross-contamination.
-                            We invite you to inform us if you have any food intolerance.
+                        Please note that we try to clearly label and inform you in the presence of allergens in our drinks and snacks, however our
+                        kitchen and coffee bar can allow for cross-contamination. We invite you to inform us if you have
+                        any food intolerance.
                     </div>
                     <div class="col-6 menu__col pale--bg">
-                         Allergens legend: 1- Milk, 2- Eggs, 3- Fish & Crustacean Shellfish, 4- Tree Nuts (e.g., almonds, walnuts, pecans), 5- Peanuts6- Wheat, 7- Soybeans
+                        <h3>Allergens legend</h3> 1 - Milk, 2 - Eggs, 3 - Fish & Crustacean Shellfish, 4 - Tree Nuts (e.g., almonds, walnuts, pecans), 5 - Peanuts,6 -
+                        Wheat, 7 - Soybeans
                     </div>
                 </div>
 
             </div>
             </div>
         </section>
-        <section class="testimonials" name="testimonials">
+        <section class="testimonials" id="testimonials">
             <h2 class="testimonials__header">
                 Testimonials
             </h2>
             <div class="container">
                 <div class="col-2">
-                    <h3>You know a coffee lover?</h3> Please avail of our gift certificates for a wonderful present!
+                    <h2>You know a coffee lover?</h2> Please avail of our gift certificates for a wonderful present!
                     <p>We offer discounts on any booking made in advance following your first fisit.</p>
                 </div>
-                <div class="col-4">
-                    <h2>Share the love, leave an online review! We have received a
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> TripAdvisatory for 2 consecutive years!</h2>
+                <div class="col-4 center">
+                    <h2>Share the love, leave an online review! We have received a </h2>
+
+                    <span class="testimonials__span">
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-star fa-stack-2x"></i>
+                            <i class="fas fa-coffee fa-stack-1x" style="color:#fafafa"></i>
+                        </span>
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-star fa-stack-2x"></i>
+                            <i class="fas fa-coffee fa-stack-1x" style="color:#fafafa"></i>
+                        </span>
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-star fa-stack-2x"></i>
+                            <i class="fas fa-coffee fa-stack-1x" style="color:#fafafa"></i>
+                        </span>
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-star fa-stack-2x"></i>
+                            <i class="fas fa-coffee fa-stack-1x" style="color:#fafafa"></i>
+                        </span>
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-star fa-stack-2x"></i>
+                            <i class="fas fa-coffee fa-stack-1x" style="color:#fafafa"></i>
+                        </span>
+                        <h2>TripAdvisatory for 2 consecutive years!</h2>
                 </div>
                 <div class="col-6">
                     If you wish to a group or business team event, we will be happy to provide the facility along with promotional doocumentation
@@ -220,17 +244,24 @@
                 </div>
             </div>
         </section>
-        <section class="upcoming" name="upcoming">
+        <section class="upcoming" id="upcoming">
             <h2 class="upcoming__header">Upcoming Events</h2>
             <div class="container">
-                <h2>We keep an eye for any coffee-related activities and events.</h2>
+
                 <div class="col-6">
-                    Click
-                    <a href="https://www.worldcoffeeevents.org/" target="_blank">
-                        <button>here</button>
-                    </a> for any coffee related event in Ireland!
-                    <div class="col-2">Date: 20-23 June</div>
-                    <div class="col-2">Event: World Barista Championship, World of Coffee Amsterdam</div>
+                    <h2>We keep an eye for any coffee-related activities and events.</h2>
+                    <h3>
+                        <a href="https://www.worldcoffeeevents.org/" target="_blank">Click here to learn about any coffee-related event in Ireland!</a>
+                    </h3>
+                    <div class="container upcoming__event">
+
+                        <div class="col-2">Date: 20-23 June</div>
+                        <div class="col-2">Event: World Barista Championship, World of Coffee Amsterdam</div>
+                        <div class="col-2 pale--bg">
+                            <img src="images/WBC-logo-350px.png">
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-6">
                     <h3>In-house news: We now offer Chemex coffee!</h3>
@@ -244,40 +275,58 @@
                 </div>
 
         </section>
-        <section class="contact" name="contact">
-                <h2 class="contact__header">Contact Us</h2>
-                <div class="container">
-                    <h2>Don't be shy!</h2>
-                    <div class="col-6">
-                        Click
-                        <a href="https://www.worldcoffeeevents.org/" target="_blank">
-                            <button>here</button>
-                        </a> for any coffee related event in Ireland!
-                        <div class="col-2">Date: 20-23 June</div>
-                        <div class="col-2">Event: World Barista Championship, World of Coffee Amsterdam</div>
-                    </div>
-                    <div class="col-6">
-                        <h3>In-house news: We now offer Chemex coffee!</h3>
-                        <p>
-                            The Chemex is what all those other coffeemakers strive to be. Invented in 1941, it has never needed to be altered or improved
-                            upon. Winning awards in both the design and science communities, being kept in permanent collection
-                            of some of the most prestigious museums in the world, are just a couple pieces of its iconic history
-                            that none of the others can boast. Widely considered to be one of the best ways to brew the perfect
-                            cup of coffee; the Chemex has been the choice of coffee lovers globally for over 75 years and counting.
-                        </p>
-                    </div>
-    
-            </section>
+        <section class="contact" id="contact">
+            <h2 class="contact__header">Contact Us</h2>
+            <div class="container">
+                <h2>Don't be shy!</h2>
+                <div class="col-6">
+
+                    Barista 1: email address Barista 1: email address Barista 1: email address Owner: email address
+                </div>
+
+                <div class="col-6">
+                    <h3>Come visit us</h3>
+                    <!-- fake map -->
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
-            <div class="col-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum atque, et adipisci illum officia perspiciatis ex vel
-                nemo quas reprehenderit, saepe dignissimos facere culpa eaque nobis at quod voluptatibus?
-            </div>
-            <div class="col-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum atque, et adipisci illum officia perspiciatis ex vel
-                nemo quas reprehenderit, saepe dignissimos facere culpa eaque nobis at quod voluptatibus?
+            <div class="col-12 ">
+                <h3>follow the dazzling cafe!</h3>
+                <ul>
+                    <li>
+                        <a href="# " target="_blank ">
+                            <i class="fab fa-facebook "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# " target="_blank ">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# " target="_blank ">
+                            <i class="fab fa-linkedin "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# " target="_blank ">
+                            <i class="fab fa-pinterest "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# " target="_blank ">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# " target="_blank ">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>

@@ -1,55 +1,61 @@
 .container {
-    max-width: $grid-width;
-    background-color: transparent;
-    margin: 0 auto;
-    padding: 2rem 3rem;
-  
+  max-width: $grid-width;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+
+  &:not(:last-child) {
+    //.row:not() ===> we select everything except the last child
+    margin-bottom: $gutter-y;
+  }
+
+  @include clearfix;
+
+  //selects all elements for which the class attribute starts with "col-"
+  //ends with "col-" would be [class$="col-"], contains "col-" [class*="col-"]
+  img {
+    max-width: 100%;
+  }
+
+  .col-2 {
+    width: calc((100% - (#{$gutter-x}) * 5) / 6);
+  }
+
+  .col-3 {
+    width: calc((100% - #{$gutter-x} * 3) / 4);
+  }
+
+  .col-6 {
+    width: calc((100% - #{$gutter-x}) / 2);
+  }
+
+  .col-4 {
+    width: calc(
+      (100% - #{$gutter-x} * 2) / 3
+    ); // EQUALS TO:  width: calc((100% - 2 * #{$gutter-x}) / 3);
+  }
+  .col-12 {
+    width: 100%;
+  }
+
+  .pale--bg {
+    background-color: $color-pale-2;
+    border: 2px solid $color-coffee-dark;
+  }
+
+  [class^="col-"] {
+    padding: 2rem 1rem;
+    display: block;
+    width: 100%;
+
     &:not(:last-child) {
-      //.row:not() ===> we select everything except the last child
-      margin-bottom: $gutter-y;
-    }
-  
-    @include clearfix;
-  
-    //selects all elements for which the class attribute starts with "col-"
-    //ends with "col-" would be [class$="col-"], contains "col-" [class*="col-"]
-  
-  
-    .col-2 {
-      width: calc((100% - (#{$gutter-x}) * 5) / 6);
-    }
-  
-    .col-3 {
-      width: calc((100% - #{$gutter-x} * 3) / 4);
-    }
-  
-    .col-6 {
-      width: calc((100% - #{$gutter-x}) / 2);
-    }
-  
-    .col-4 {
-      width: calc(
-        (100% - #{$gutter-x} * 2) / 3
-      ); // EQUALS TO:  width: calc((100% - 2 * #{$gutter-x}) / 3);
-    }
-    .col-12 {
-      width: 100%;
-    }
-  
-    .pale--bg {
-      background-color: $color-pale-2;
-      border: 2px solid $color-coffee-dark;
-    }
-  
-    
-    [class^="col-"] {
-      padding: 2rem 1rem;
-      display: block;
-      width:100%;
-  
-      &:not(:last-child) {
-        margin-right: $gutter-x;
-      }
+      margin-right: $gutter-x;
     }
   }
-  
+
+
+}
+.center{
+  text-align: center;
+  margin: auto 0;
+}

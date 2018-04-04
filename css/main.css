@@ -98,7 +98,7 @@ html {
 .about,
 .menu,
 .testimonials,
-.upcoming {
+.upcoming, .contact {
   padding: 10rem 0;
   margin-top: -2vh;
 }
@@ -153,6 +153,9 @@ html {
   display: table;
   clear: both;
 }
+.container img {
+  max-width: 100%;
+}
 .container .col-2 {
   width: calc((100% - (6rem) * 5) / 6);
 }
@@ -181,6 +184,11 @@ html {
   margin-right: 6rem;
 }
 
+.center {
+  text-align: center;
+  margin: auto 0;
+}
+
 footer {
   border: none;
   padding: 2rem 0;
@@ -189,6 +197,31 @@ footer {
   background-size: stretch;
   background-position: bottom;
   position: relative;
+}
+footer ul > li {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  margin: .8rem;
+}
+footer ul > li a:active,
+footer ul > li a:link,
+footer ul > li a:visited,
+footer ul > li a::after,
+footer ul > li a::before {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+footer ul > li a:hover {
+  text-decoration: overline;
+}
+footer h3 {
+  font-family: "Covered By Your Grace", sans-serif;
+  color: #f0f0f0;
+  letter-spacing: .3rem;
+  font-size: 2rem;
 }
 
 .header {
@@ -343,10 +376,26 @@ footer {
   margin: 1rem 0 1rem 0;
 }
 
-.dropdownLink:hover {
-  animation-name: Bigger;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+testimonials__span {
+  display: block;
+}
+
+.upcoming a:active,
+.upcoming a:link,
+.upcoming a:visited,
+.upcoming a::after,
+.upcoming a::before {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+.upcoming a:hover {
+  text-decoration: overline;
+}
+.upcoming h3 {
+  padding: 2rem 0;
+}
+.upcoming__event {
+  background-color: rgba(171, 159, 144, 0.431);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -355,12 +404,20 @@ footer {
     display: none;
   }
 
+  .header__top {
+    font-size: 6rem;
+  }
+
+  .header__mid {
+    font-size: 3rem;
+  }
+
   .nav h1 {
     display: inline-block;
   }
   .nav__list {
     position: relative;
-    z-index: -1;
+    z-index: 2;
     top: 0px;
     width: 100%;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
