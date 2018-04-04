@@ -1,0 +1,26 @@
+// 7-1 pattern inspired
+//base, components, layout, pages, abstracts, themes, vendors
+
+
+@import "abstracts/_variables.scss";
+@import "abstracts/_mixins.scss";
+@import "abstracts/_animations.scss";
+
+@import "base/_base.scss";
+@import "base/_typography.scss";
+
+@import "pages/_index.scss";
+
+@import "components/_btn.scss";
+
+@import "layout/_grids.scss";
+@import "layout/_about.scss";
+@import "layout/_contact.scss";
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+@import "layout/_menu.scss";
+@import "layout/_navigation.scss";
+@import "layout/_testimonials.scss";
+@import "layout/_upcoming.scss";
+
+@import "components/_media.scss";

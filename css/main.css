@@ -1,0 +1,418 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* box-sizing property is not inherited by default. by adding the property, we allow for the inheritance*/
+}
+
+/*root font size is set in the html selector*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Encode Sans", sans-serif;
+}
+
+.header__text-box {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+.header__top {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
+  font-family: "Covered By Your Grace", sans-serif;
+}
+.header__mid {
+  font-size: 1.5rem;
+}
+.header__btn {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.nav ul > li {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+}
+.nav ul > li a:active,
+.nav ul > li a:link,
+.nav ul > li a:visited,
+.nav ul > li a::after,
+.nav ul > li a::before {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+.nav ul > li a:hover {
+  text-decoration: overline;
+}
+.nav__title {
+  font-family: "Covered By Your Grace", sans-serif;
+  font-size: 2rem;
+}
+
+[class$="__header"] {
+  text-align: center;
+  letter-spacing: 1.1rem;
+  font-family: "Covered By Your Grace", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 4rem;
+}
+[class$="__header"]::first-letter {
+  text-decoration: overline;
+  text-decoration-color: #b65f44;
+}
+
+[class^="col-"] {
+  font-size: 1.5rem;
+}
+
+.menu__table tbody td {
+  font-size: 1.3rem;
+}
+.menu__table th:nth-child(3) {
+  color: #3e240d;
+  font-size: 1.1rem;
+}
+.menu__table thead {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: #dfdcd3;
+}
+.menu__table h3 {
+  font-family: "Cormorant Upright";
+  font-size: 2rem;
+}
+
+.about,
+.menu,
+.loyalty_program,
+.upcoming {
+  padding: 15rem 0;
+  margin-top: -2vh;
+}
+
+.about,
+.loyalty_program, footer {
+  background-color: #dfdcd3;
+}
+
+.menu {
+  background-color: #b65f44;
+}
+
+.upcoming {
+  background-color: #17354d;
+  color: #cbbc93;
+}
+
+.btn:link, .btn:visited, .btn:active, .btn::after, .btn--dropdown {
+  border-bottom: 3px solid #b65f44;
+  background-color: #dfdcd3;
+  padding: 1rem;
+  transition: all 1s;
+  transition-timing-function: ease-in-out;
+  display: inline-block;
+  color: #b65f44;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Cormorant Upright";
+  font-weight: 700;
+}
+.btn--dropdown {
+  border: none;
+  width: 100vw;
+  height: 7rem;
+  font-size: 2rem;
+  letter-spacing: 1.2rem;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 114rem;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+.container:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container .col-2 {
+  width: calc((100% - (6rem) * 5) / 6);
+}
+.container .col-3 {
+  width: calc((100% - 6rem * 3) / 4);
+}
+.container .col-6 {
+  width: calc((100% - 6rem) / 2);
+}
+.container .col-4 {
+  width: calc( (100% - 6rem * 2) / 3 );
+}
+.container .col-12 {
+  width: 100%;
+}
+.container .pale--bg {
+  background-color: #dfdcd3;
+  border: 2px solid #3e240d;
+}
+.container [class^="col-"] {
+  padding: 2rem 1rem;
+  display: block;
+  width: 100%;
+}
+.container [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+footer {
+  border: none;
+  padding: 2rem 0;
+  display: block;
+  background-image: linear-gradient(to left bottom, rgba(23, 53, 77, 0.777), rgba(182, 95, 68, 0.763)), url(../images/bg1.jpg);
+  background-size: stretch;
+  background-position: bottom;
+  position: relative;
+}
+
+.header {
+  display: block;
+  height: 90vh;
+  background-image: linear-gradient(to left top, rgba(169, 215, 238, 0.277), rgba(182, 95, 68, 0.563)), url(../images/bg3.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+.header__text-box {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  max-width: 80rem;
+}
+.header__top span, .header__mid span {
+  display: block;
+}
+.header__btn {
+  position: absolute;
+  left: 2rem;
+  display: block;
+  padding: 2rem;
+}
+.header__btn:hover {
+  color: #3e240d;
+  letter-spacing: 0.4rem;
+}
+
+.menu {
+  border: none;
+  padding: 2rem 0;
+  display: block;
+  background-image: linear-gradient(to right bottom, rgba(223, 220, 211, 0.877), rgba(182, 95, 68, 0.863)), url(../images/bg4.jpg);
+  position: relative;
+}
+.menu__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 88%;
+}
+.menu__table {
+  background-color: rgba(171, 159, 144, 0.431);
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  display: block;
+}
+.menu__table td {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  padding-left: 50%;
+}
+.menu__table td:before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.menu__table td, .menu__table th {
+  border: 0.1rem solid #948473;
+  padding: 0.5rem 0.5rem;
+}
+.menu__table td:nth-child(2) {
+  background-color: rgba(226, 217, 212, 0.149);
+}
+.menu__table td:nth-child(3) {
+  border-bottom: 2px solid #3e240d;
+}
+.menu__table thead {
+  background: rgba(85, 63, 45, 0.102);
+}
+.menu__table thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.menu__table thead th:first-child {
+  border-left: none;
+}
+.menu__table table,
+.menu__table thead,
+.menu__table tbody,
+.menu__table th,
+.menu__table td,
+.menu__table tr {
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  z-index: 2;
+  background-image: linear-gradient(to top, rgba(169, 215, 238, 0.277), rgba(182, 95, 68, 0.563));
+  text-align: center;
+  color: #f0f0f0;
+}
+.nav--top {
+  position: fixed;
+  top: 0;
+}
+.nav h1 {
+  display: none;
+}
+.nav__title {
+  height: 2rem;
+  font-family: "Cormorant Upright";
+  font-size: 4rem;
+}
+.nav__title, .nav li {
+  display: inline-block;
+  margin: 2rem;
+}
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5rem;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, rgba(171, 159, 144, 0.977), rgba(182, 95, 68, 0.863));
+  box-shadow: 0 0.6rem 1rem 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+  text-decoration: none;
+}
+.nav--dropdown {
+  width: 150px;
+  position: relative;
+}
+.nav--dropdown:hover button {
+  background-color: #dfdcd3;
+}
+.nav--dropdown:hover .nav__list {
+  transform: translateY(0);
+}
+
+.dropdownLink {
+  display: block;
+  margin: 1rem 0 1rem 0;
+}
+
+.dropdownLink:hover {
+  animation-name: Bigger;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .btn--dropdown {
+    display: none;
+  }
+
+  .nav h1 {
+    display: inline-block;
+  }
+  .nav__list {
+    position: relative;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    background-image: none;
+    transform: none;
+    transition: none;
+    text-decoration: none;
+  }
+  .nav--dropdown {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+  }
+  .nav--dropdown:hover .nav__list {
+    transform: none;
+  }
+  .nav li, .nav__title {
+    margin: 0.5rem;
+  }
+  .nav .dropdownLink:hover {
+    animation-name: none;
+    transform: none;
+  }
+
+  .menu__table thead {
+    display: table-header-group;
+  }
+  .menu__table thead tr {
+    position: relative;
+  }
+  .menu__table tr {
+    display: table-row;
+  }
+  .menu__table tbody {
+    display: table-row-group;
+  }
+  .menu__table td,
+  .menu__table th {
+    display: table-cell;
+    vertical-align: inherit;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*something*/
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*something*/
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*something*/
+}

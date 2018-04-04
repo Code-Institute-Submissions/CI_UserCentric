@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* box-sizing property is not inherited by default. by adding the property, we allow for the inheritance*/
+}
+/*root font size is set in the html selector*/
+html {
+    //font-size: 10px;
+        font-size:62.5%;
+    //average percentage to account for viewers' personal settings
+}
+
+body {
+    box-sizing: border-box; 
+}
+

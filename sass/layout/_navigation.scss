@@ -1,0 +1,86 @@
+// clear up this sheet!!
+
+.nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    z-index: 2;
+    background-image: linear-gradient(
+      to top,
+      rgba($color-denim-pale, 0.277),
+      rgba($color-coffee-o, 0.563)
+    );
+    text-align: center;
+    color: $color-pale-3;
+  
+    &--top {
+      position: fixed;
+      top: 0;
+    }
+  
+    & h1 {
+      display: none;
+    }
+  
+    &__title {
+      height: 2rem;
+      font-family: $special-font1;
+      font-size: 4rem;
+    }
+  
+    &__title,
+    & li {
+      display: inline-block;
+      margin: 2rem;
+    }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    z-index: -1;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-pale-4, 0.977),
+      rgba($color-coffee-o, 0.863)
+    );
+    box-shadow: 0 .6rem 1rem 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    text-decoration: none;
+  }
+  
+  &--dropdown {
+    width: 150px;
+    position: relative;
+  }
+  
+  &--dropdown:hover button {
+    background-color: $color-pale-2;
+  }
+  
+  &--dropdown:hover .nav__list {
+    transform: translateY(0);
+  }
+  
+  }
+  
+  .dropdownLink {
+    display: block;
+    margin: 1rem 0 1rem 0;    
+  }
+  
+  .dropdownLink:hover {
+    animation-name: Bigger;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  
+  

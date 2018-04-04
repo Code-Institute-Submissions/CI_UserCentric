@@ -1,0 +1,31 @@
+.btn {
+    &:link,
+    &:visited,
+    &:active,
+    &::after,
+    &--dropdown {
+      border-bottom: 3px solid $color-coffee-o;
+      background-color:$color-pale-2;
+      padding: 1rem;
+      transition: all 1s;
+      transition-timing-function: ease-in-out;
+      display: inline-block;
+      color: $color-coffee-o;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family:$special-font1;
+      font-weight:$bold;
+    }
+  
+    &--dropdown {
+      border: none;
+      width: 100vw;
+      height: 7rem;
+      font-size: 2rem;
+      letter-spacing: 1.2rem;
+      cursor: pointer;
+  
+  
+    }
+  }
+  

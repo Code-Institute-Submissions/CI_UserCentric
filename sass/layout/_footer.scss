@@ -1,0 +1,15 @@
+footer {
+    border: none;
+    padding: 2rem 0;
+    display: block;
+    background-image: linear-gradient(
+        to left bottom,
+        rgba($color-denim, 0.777),
+        rgba($color-coffee-o, 0.763)
+      ),
+      url(../images/bg1.jpg);
+    background-size: stretch;
+    background-position: bottom;
+    position: relative;
+  }
+  

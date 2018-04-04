@@ -1,0 +1,76 @@
+.menu {
+    border: none;
+    padding: 2rem 0;
+    display: block;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-pale-2, 0.877),
+        rgba($color-coffee-o, 0.863)
+      ),
+      url(../images/bg4.jpg);
+    position: relative;
+  
+    &__img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 88%;
+    }
+  
+    &__table {
+      background-color: $color-pale-4;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      display: block;
+  
+      td {
+        border: none;
+        border-bottom: 1px solid $color-pale-3;
+        position: relative;
+        padding-left: 50%;
+        &:before {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap;
+        }
+      }
+  
+      & td,
+      & th {
+        border: 0.1rem solid $color-coffee-pale;
+        padding: 0.5rem 0.5rem;
+      }
+      & td:nth-child(2) {
+        background-color: $color-pale-5;
+      }
+      & td:nth-child(3) {
+        border-bottom: 2px solid $color-coffee-dark;
+      }
+  
+      & thead {
+        background: $color-pale-6;
+        & tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+      }
+  
+      & thead th:first-child {
+        border-left: none;
+      }
+      & table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+    }
+  }
+  

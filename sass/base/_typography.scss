@@ -1,0 +1,97 @@
+html {
+    font-family: $main-font;
+  }
+  
+  .header {
+    &__text-box {
+      font-size: 2rem;
+      font-weight: $regular;
+      color: $color-pale-3;
+    }
+  
+    &__top {
+      font-size: 3rem;
+      font-weight: $regular;
+      letter-spacing: 1.2rem;
+      font-family: $special-font2;
+    }
+  
+    &__mid {
+      font-size: 1.5rem;
+    }
+  
+    &__btn {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+
+  
+  // Navigation
+  .nav {
+    & ul > li {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      list-style-type: none;
+  
+      & a:active,
+      a:link,
+      a:visited,
+      a::after,
+      a::before {
+        color: $color-pale-3;
+        text-decoration: none;
+      }
+  
+      & a:hover {
+        text-decoration: overline;
+      }
+    }
+  
+    &__title {
+      font-family: $special-font2;
+      font-size: 2rem;
+    }
+  }
+  [class$="__header"] {
+    text-align: center;
+    letter-spacing: 1.1rem;
+    font-family: $special-font2;
+    font-weight: $bold;
+    font-size: 4rem;
+    margin: 4rem;
+  
+    &::first-letter {
+      text-decoration: overline;
+      text-decoration-color: $color-coffee-o;
+    }
+  }
+  
+  [class^="col-"] {
+    font-size: 1.5rem;
+  }
+  
+  // Table
+  
+  .menu__table {
+    & tbody td {
+      font-size: 1.3rem;
+    }
+    & th:nth-child(3) {
+      color: $color-coffee-dark;
+      font-size: 1.1rem;
+    }
+  
+    & thead {
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      color: $color-pale-2;
+    }
+  
+    & h3 {
+      font-family: $special-font1;
+      font-size: 2rem;
+    }
+  }
+  

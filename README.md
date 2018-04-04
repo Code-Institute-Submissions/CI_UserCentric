@@ -28,8 +28,8 @@ __Status__: *In progress*
 - [ ] Write a README.md file for your project that explains what the project does and the need that it fulfills. It should also describe the functionality of the project, as well as the technologies used. Detail how the project was deployed and tested and if some of the work was based on other code, explain what was kept and how it was changed to fit your need. A project submitted without a README.md file will FAIL. 
 __Status__: *In progress*
 
-- [ ] Use Git & GitHub for version control. Each new piece of functionality should be in a separate commit. 
-__Status__: *In progress*
+- [_!_] Use Git & GitHub for version control. Each new piece of functionality should be in a separate commit. 
+__Status__: Repository created, commiting changes
 
 - [ ] Deploy the final version of your code to a hosting platform such as GitHub Pages. 
 __Status__: *In progress*
@@ -65,7 +65,7 @@ Present the concept of a coffee tasting experience
 ## Library used and other resources
 * [#] library one - styling sheet
 * [#] library two - javascript sheet
-* [#] library three - structural xyz
+* [https://sass-guidelin.es/#architecture] SASS 7-1 file pattern 
 * [#] Code Institute - Pure CSS dropdown
 
 ## Testing

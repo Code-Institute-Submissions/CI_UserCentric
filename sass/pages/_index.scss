@@ -1,0 +1,21 @@
+.about,
+.menu,
+.loyalty_program,
+.upcoming {
+  padding: 15rem 0;
+  margin-top: -2vh;
+}
+
+.about,
+.loyalty_program, footer {
+  background-color: $color-pale-2;
+}
+
+.menu {
+  background-color: $color-coffee-o;
+}
+
+.upcoming {
+  background-color: $color-denim;
+  color:$color-pale-1;
+}
