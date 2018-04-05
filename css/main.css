@@ -20,6 +20,13 @@ html {
   font-family: "Encode Sans", sans-serif;
 }
 
+ul > li {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+}
+
 .header__text-box {
   font-size: 2rem;
   font-weight: 400;
@@ -39,12 +46,6 @@ html {
   font-size: 1.5rem;
 }
 
-.nav ul > li {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-align: center;
-  list-style-type: none;
-}
 .nav ul > li a:active,
 .nav ul > li a:link,
 .nav ul > li a:visited,
@@ -65,7 +66,7 @@ html {
   text-align: center;
   letter-spacing: 1.1rem;
   font-family: "Covered By Your Grace", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 4rem;
   margin: 4rem;
 }
@@ -95,6 +96,10 @@ html {
   font-size: 2rem;
 }
 
+hr {
+  border: 1px solid #3e240d;
+}
+
 .about,
 .menu,
 .testimonials,
@@ -104,7 +109,7 @@ html {
 }
 
 .about,
-.testimonials, footer {
+.testimonials, .contact, footer {
   background-color: #dfdcd3;
 }
 
@@ -128,7 +133,7 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Cormorant Upright";
-  font-weight: 700;
+  font-weight: 800;
 }
 .btn--dropdown {
   border: none;
@@ -140,7 +145,7 @@ html {
 }
 
 .container {
-  max-width: 114rem;
+  max-width: 100vw;
   background-color: transparent;
   margin: 0 auto;
   padding: 2rem 3rem;
@@ -156,37 +161,27 @@ html {
 .container img {
   max-width: 100%;
 }
-.container .col-2 {
-  width: calc((100% - (6rem) * 5) / 6);
-}
-.container .col-3 {
-  width: calc((100% - 6rem * 3) / 4);
-}
-.container .col-6 {
-  width: calc((100% - 6rem) / 2);
-}
-.container .col-4 {
-  width: calc( (100% - 6rem * 2) / 3 );
-}
-.container .col-12 {
-  width: 100%;
-}
 .container .pale--bg {
   background-color: #dfdcd3;
   border: 2px solid #3e240d;
 }
-.container [class^="col-"] {
-  padding: 2rem 1rem;
+.container .col {
+  padding: 2rem 2rem;
   display: block;
   width: 100%;
 }
-.container [class^="col-"]:not(:last-child) {
-  margin-right: 6rem;
+.container .col:not(:last-child) {
+  margin-right: 5rem;
 }
 
 .center {
   text-align: center;
   margin: auto 0;
+}
+
+.contact__img img {
+  border-radius: 50%;
+  border: 4px solid #3e240d;
 }
 
 footer {
@@ -398,7 +393,6 @@ testimonials__span {
   background-color: rgba(171, 159, 144, 0.431);
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .btn--dropdown {
     display: none;
@@ -410,6 +404,32 @@ testimonials__span {
 
   .header__mid {
     font-size: 3rem;
+  }
+
+  .media--600 {
+    display: inline-block;
+  }
+
+  .container .col-2,
+  .container .col-3,
+  .container .col-6,
+  .container .col-4 {
+    float: left;
+  }
+  .container .col-2 {
+    width: calc((100% - (5rem) * 5) / 6);
+  }
+  .container .col-3 {
+    width: calc((100% - 5rem * 3) / 4);
+  }
+  .container .col-6 {
+    width: calc((100% - 5rem) / 2);
+  }
+  .container .col-4 {
+    width: calc( (100% - 5rem * 2) / 3 );
+  }
+  .container .col-12 {
+    width: 100%;
   }
 
   .nav h1 {

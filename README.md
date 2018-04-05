@@ -5,22 +5,22 @@
 
 #### Use the following guidelines when developing your project:
 
-- [ ] Create a website of around 4-5 pages, or (if using a single scrolling page) these should be separate page areas. 
-__Status__: *In progress*
+- [x] Create a website of around 4-5 pages, or (if using a single scrolling page) these should be separate page areas. 
+__Status__: Done
 
-- [ ] Incorporate main navigation and grid layout (you might want to use Flexbox or Bootstrap to accomplish this). 
-__Status__: *In progress*
+- [x] Incorporate main navigation and grid layout (you might want to use Flexbox or Bootstrap to accomplish this). 
+__Status__: Done
 
-- [ ] Whenever possible, strive to use semantic HTML5 elements to structure your HTML code better. __Status__: *In progress*
+- [x] Whenever possible, strive to use semantic HTML5 elements to structure your HTML code better. __Status__: Done
 
 - [ ] Make sure your site is as responsive as possible. You can test this by checking the website on different screen sizes and browsers. 
 __Status__: *In progress* 
 
-- [ ] We advise that you write down user stories and create wireframes/mockups before embarking on full-blown development. 
-__Status__: *In progress*
+- [x] We advise that you write down user stories and create wireframes/mockups before embarking on full-blown development. 
+__Status__: Done
 
 - [ ] The site can also make use of CSS frameworks such as Bootstrap, just make sure you maintain a clear separation between the library code and your code. 
-__Status__: *In progress*
+__Status__: No framework used so far
 
 - [ ] You should conduct and document tests to ensure that all of your website’s functionality works well. 
 __Status__: *In progress*
@@ -59,20 +59,20 @@ In progress.
 
 ## Functionality of the project
 I.e. what does this website offer/allow/show when visited
-
-Present the concept of a coffee tasting experience
+Present the concept of a coffee tasting experience workshop
 
 ## Library used and other resources
-* [#] library one - styling sheet
-* [#] library two - javascript sheet
+
+* [/pixabay.com/] Pixelbay - Stock photos
 * [https://sass-guidelin.es/#architecture] SASS 7-1 file pattern 
 * [#] Code Institute - Pure CSS dropdown
 
 ## Testing
 ### Mobile to desktop
 What these tests test and why
-```
-Example
+``` Media queries
+Screen sizes
+
 ```
 ### Browser compatibility
 What these tests test and why
