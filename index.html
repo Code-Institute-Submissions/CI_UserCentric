@@ -55,7 +55,7 @@
                 <span>Tired, grumpy,</span>
                 <span>need a pick me up?</span>
             </h1>
-            <p class="header__mid">
+            <div class="header__mid">
                 <span>But you won't settle for something subpar.
                     <span>
                         <strong>We hear you.</strong>
@@ -63,7 +63,7 @@
                 </span>
                 Choose your your coffee experience --
                 <span>we guarantee you'll be impressed.</span>
-            </p>
+            </div>
             <div class="header__btn">
                 <a href="#menu" class="btn">Give us a try!</a>
             </div>
@@ -77,7 +77,15 @@
             <h2 class="about__header">
                 About
             </h2>
-            <div class="container">
+            <div class="container container__motto">
+                <div class="col-6 col about__col ">
+                    <span>
+                        <i class="fas fa-coffee fa-4x"></i>
+                    </span>
+                    <span class="motto col"> The best coffee is the one you have not tasted yet.
+                    </span>
+
+                </div>
                 <div class="col-6 col about__col">
                     <h3>Welcome to the Dazzling Cafe, newly opened in Smithfield, Dublin, Ireland!</h3>
                     <p> We honestly believe that the coffee world is boundless and barely explored by the everyday regular drinker.
@@ -90,38 +98,49 @@
                         and enjoy it as it deserves. </p>
                 </div>
 
-                <div class="col-6 col about__col">
-                    <p> Do you want to drink something unique and unforgettable? This coffee experience workshop offers a tasting
-                        hosted by talented, internationally recognized baristas and coffee growers, experts to introduce
-                        the many flavors that coffee offers. From the beans to your cup ... There are so many kinds of coffees
-                        that you will be able to enjoy! Amateur coffee drinker, do not hesitate to taste everything you want,
-                        this experience is made for that! Ideal for gourmands and adventurious tasters, you will discover
-                        mixtures of flavors and tastes unsuspected. Your taste buds will be delighted! Come to know more
-                        about coffee as well as all its secrets.
+            </div>
+            <div class="container">
+                <div class="col-6 col about__col pale--bg">
+                    <p> Do you want to drink something unique and unforgettable? This coffee experience workshop offers tastings, courses and talks
+                        hosted by talented, internationally recognized baristas and coffee growers. Come meet experts introducing
+                        the intricacies that the coffee world offers. From the beans to your cup ... There are so many kinds of coffees
+                        that you will be able to enjoy! Ideal for gourmands and adventurious tasters, you will discover
+                        mixtures of flavors and tastes unsuspected. Your taste buds will be delighted! 
                     </p>
 
                 </div>
-                <div class="col-6 col about__col">
-                        <h3>Meet our team</h3>
-                        <p> lorem
-                        </p>
-    
+                <div class="col-6 col about__col ">
+                    <h3 class="spacious">Meet our Team of Baristas</h3>
+                    <div class="col-12">
+                        <ul class="about__list">
+                            <li>
+                                <img src="images/bar1.png" alt="Pascal, Barista 1">
+                            </li>
+                            <li>
+                                <img src="images/bar2.png" alt="Sofia, Barista 2">
+                            </li>
+                            <li>
+                                <img src="images/bar3.png" alt="Federica, Barista 3">
+                            </li>
+                            <li>
+                                <img src="images/bar4.png" alt="Ally, Barista 4">
+                            </li>
+
+                        </ul>
+
                     </div>
-                    <div class="col-6 col about__col">
-                            <h3>Our Motto</h3>
-                            <span class="motto"> The best coffee is the one you have tasted yet.
-                            </span>
-        
-                        </div>
-            </div>
+                    <div class="col-12">(from left to right) Pascal, Sofia, Federica, Ally</div>
+                </div>
         </section>
         <section class="menu" id="menu">
             <h2 class="menu__header">
                 Coffee Tastings & Courses
             </h2>
-            
+
             <div class="container">
-                <div class="col-12 center">Please review the courses available and call us to reserve your spot! Payments are accepted on the premises only.</div>
+                <div class="col-12 ">Please review the courses available and call us to reserve your spot! Payments are accepted on the premises
+                    only.
+                </div>
                 <div class="col-12 col menu__col--collapse">
                     <table class="menu__table">
                         <thead>
@@ -198,17 +217,20 @@
                 </div>
                 <div class="container">
 
-                    <div class="col-6 col menu__col">
-                        <p>We offer snacks and freshly baked goods on a daily basis. We can cater to vegan, lactose-intolerant and coeliac/gluten-intolerant
-                        customers.</p><hr>
-                    <p>
-                        Please note that we try to clearly label and inform you in the presence of allergens in our drinks and snacks, however our
-                        kitchen and coffee bar can allow for cross-contamination. We invite you to inform us if you have
-                        any food intolerance.</p>
+                    <div class="col-6 col ">
+                        <p>We offer snacks and freshly baked goods on a daily basis. We can cater to vegan, lactose-intolerant
+                            and coeliac/gluten-intolerant customers.
+                        </p>
+                        <hr>
+                        <p>
+                            Please note that we try to clearly label and inform you in the presence of allergens in our drinks and snacks, however our
+                            kitchen and coffee bar can allow for cross-contamination. We invite you to inform us if you have
+                            any food intolerance.</p>
                     </div>
-                    <div class="col-6 col menu__col pale--bg">
-                        <h3>Allergens legend</h3> 1 - Milk, 2 - Eggs, 3 - Fish & Crustacean Shellfish, 4 - Tree Nuts (e.g., almonds,
-                        walnuts, pecans), 5 - Peanuts,6 - Wheat, 7 - Soybeans
+                    <div class="col-6 col  pale--bg ">
+                        <h3>Allergens legend</h3>
+                        <p>1 - Milk, 2 - Eggs, 3 - Fish & Crustacean Shellfish, 4 - Tree Nuts (e.g., almonds, walnuts, pecans),
+                            5 - Peanuts,6 - Wheat, 7 - Soybeans</p>
                     </div>
                 </div>
 
@@ -219,13 +241,33 @@
             <h2 class="testimonials__header">
                 Testimonials
             </h2>
-            <div class="container">
+            <div class="container testimonials__show--big ">
+                <div class="col-6 col">
+                    <img src="images/t1.png">
+
+                    <h3>Janet from Meath</h3>
+                    <p>
+                        <i class="fas fa-quote-left fa-2x"></i> Best experience I ever had! Previous to my visit, I only knew how to prepare coffee with a moka.</p>
+                </div>
+                <div class="col-6 col">
+                    <img src="images/t2.png">
+
+                    <h3>Arnold from Frankfurt</h3>
+                    <p>
+                        <i class="fas fa-quote-left fa-2x"></i> The Brazilian coffee bean talk was brilliant. I will come back when a new country or region's
+                        bean product is showcased.</p>
+                </div>
+
+            </div>
+
+            <div class="container ">
                 <div class="col-3 col">
-                    <h2>You know a coffee lover?</h2> Please avail of our gift certificates for a wonderful present!
+                    <h2>You know a coffee lover?</h2>
+                    <p>Please avail of our gift certificates for a wonderful present!</p>
                     <p>Additionally, we offer discounts on any booking made in advance following your first fisit.</p>
                 </div>
-                <div class="col-6 col center">
-                    <h2>Share the love, leave an online review! We have received </h2>
+                <div class="col-6 col ">
+                    <h2 class="spacious">Share the love, leave an online review! We have received </h2>
 
                     <span class="testimonials__span">
                         <span class="fa-stack fa-2x">
@@ -248,17 +290,19 @@
                             <i class="fas fa-star fa-stack-2x"></i>
                             <i class="fas fa-coffee fa-stack-1x" style="color:#fafafa"></i>
                         </span>
-                        <h2>from
+                        <h2 class="spacious">from
                             <u>CoffeeLoverWorld</u> and
-                            <u>TripCoffeeAdvisor</u> for 2 consecutive years!</h2>
+                            <u>TripCoffeeAdvisor</u> for <strong>2</strong> consecutive years!</h2>
                 </div>
                 <div class="col-3 col">
                     <h2>Team player?</h2>
-                    If you wish to organise a group or business team event, we will be happy to provide the facility along with promotional doocumentation
-                    and gift bags for your colleagues. A repeated vist from the same organiser will allow for a group discount
-                    as well. Please get in touch with our competent staff for more details.
+                    <p> Look no further if you wish to organise a group or team bonding event, we will be happy to provide the facility along
+                        with promotional doocumentation and treats for your colleagues. A repeated vist from the same
+                        organiser will allow for a group discount as well. Please get in touch with our competent staff for
+                        more details.</p>
                 </div>
             </div>
+
         </section>
         <section class="upcoming" id="upcoming">
             <h2 class="upcoming__header">Upcoming Events</h2>
@@ -273,7 +317,7 @@
                         <h1>Next on our calendar...</h1>
                         <div class="col">Date: 20-23 June</div>
                         <div class="col">Event: World Barista Championship, World of Coffee Amsterdam</div>
-                        <div class="col pale--bg">
+                        <div class="col pale--bg ">
                             <img src="images/WBC-logo-350px.png">
                         </div>
                     </div>
@@ -286,8 +330,12 @@
                         upon. Winning awards in both the design and science communities, being kept in permanent collection
                         of some of the most prestigious museums in the world, are just a couple pieces of its iconic history
                         that none of the others can boast. Widely considered to be one of the best ways to brew the perfect
-                        cup of coffee; the Chemex has been the choice of coffee lovers globally for over 75 years and counting. (Extract from Chemex' official website)
+                        cup of coffee; the Chemex has been the choice of coffee lovers globally for over 75 years and counting.
+                        (Extract from Chemex' official website)
                     </p>
+
+                    <img>
+                    <img>
                 </div>
 
         </section>
@@ -295,21 +343,25 @@
             <h2 class="contact__header">Contact Us</h2>
             <div class="container">
 
-                <div class="col-6 col center">
+                <div class="col-6 col  spacious">
                     <h2>Don't be shy!</h2>
-                    <ul>
-                        <li> <img src="images/bar1.png">Barista 1: bar1@dazzlingcafe.ie</li>
-                        <li> <img src="images/bar1.png">Barista 2: bar2@dazzlingcafe.ie</li>
-                        <li> <img src="images/bar1.png">Barista 3: bar3@dazzlingcafe.ie</li>
-                        <li> <img src="images/bar1.png">Barista 4: bar4@dazzlingcafe.ie</li><hr>
-                        <li> <img src="images/owner1.png">Owner: email address</li>
+                    <p>Let us know what you thought of your experience or simply give us a shout. We welcome your questions
+                        and will hear your concerns.</p>
+                    <ul class="contact__list">
+                        <li>
+                            <img src="images/grounds.jpg">
+                        </li>
+                        <li>Baristas Team: baristas@dazzlingcafe.ie</li>
+                        <li>Supplier Contact: supply@dazzlingcafe.ie</li>
                     </ul>
-                    For bookings: 
-                    phone number,
-                    info@dazzlingcafe.ie
+                    <hr>
+                    <p>For bookings: +1(0)83-555-5555, info@dazzlingcafe.ie</p>
+                    <p>Business Hours:
+                        <span>MON-FRI 9AM to 8PM, SAT-SUN 8AM to 4PM</span>
+                    </p>
                 </div>
 
-                <div class="col-6 col">
+                <div class="col-6 col ">
                     <h3>Come visit us</h3>
                     <div class="contact__img">
                         <img src="images/map.png">
@@ -321,7 +373,7 @@
     </main>
     <footer>
         <div class="container">
-            <div class="col-12 center">
+            <div class="col-12 col ">
                 <h3>follow the dazzling cafe!</h3>
                 <ul>
                     <li>

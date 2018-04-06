@@ -1,13 +1,33 @@
+// ------------General------------------------------------ //
+
 html {
   font-family: $main-font;
+}
+p {
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  line-height: 2.3rem;
+}
+
+.spacious {
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  line-height: 3rem;
 }
 
 ul > li {
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
-  list-style-type: none;}
-//Header
+  list-style-type: none;
+}
+
+[class^="col-"] {
+  font-size: 1.5rem;
+}
+// ------------End General------------------------------------ //
+
+// ------------Header ------------------------------------ //
 .header {
   &__text-box {
     font-size: 2rem;
@@ -18,7 +38,7 @@ ul > li {
   &__top {
     font-size: 3rem;
     font-weight: $regular;
-    letter-spacing: 1.2rem;
+    letter-spacing: 0.4rem;
     font-family: $special-font2;
   }
 
@@ -29,30 +49,10 @@ ul > li {
   &__btn {
     text-align: center;
     font-size: 1.5rem;
-  }
-}
-
-// Navigation
-.nav {
-  & ul > li {
-
-    & a:active,
-    a:link,
-    a:visited,
-    a::after,
-    a::before {
-      color: $color-pale-3;
-      text-decoration: none;
+    &:hover {
+      color: $color-coffee-dark;
+      letter-spacing: 0.4rem;
     }
-
-    & a:hover {
-      text-decoration: overline;
-    }
-  }
-
-  &__title {
-    font-family: $special-font2;
-    font-size: 2rem;
   }
 }
 [class$="__header"] {
@@ -68,13 +68,81 @@ ul > li {
     text-decoration-color: $color-coffee-o;
   }
 }
+// ------------End Header ------------------------------------ //
+// ------------Navigation------------------------------------ //
+.nav {
+  text-align: center;
+  color: $color-pale-3;
 
-[class^="col-"] {
-  font-size: 1.5rem;
+  & ul > li {
+    & a:active,
+    a:link,
+    a:visited,
+    a::after,
+    a::before {
+      color: $color-pale-3;
+      text-decoration: none;
+    }
+
+    & a:hover {
+      text-decoration: overline;
+    }
+  }
+  &__title {
+    height: 2rem;
+    font-family: $special-font1;
+    font-size: 4rem;
+  }
 }
 
-// Table
+// ------------ End Navigation------------------------------------ //
+// ------------ About ------------------------------------ //
+.motto {
+  font-size: 4.5rem;
+  font-family: $special-font2;
+}
 
+.about {
+  .empty {
+    display: none;
+  }
+}
+
+// ------------Contact------------------------------------ //
+
+// ------------Footer------------------------------------ //
+footer {
+  & ul > li {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    list-style-type: none;
+
+    & a:active,
+    a:link,
+    a:visited,
+    a::after,
+    a::before {
+      color: $color-pale-3;
+      text-decoration: none;
+    }
+
+    & a:hover {
+      text-decoration: overline;
+    }
+  }
+
+  & h3 {
+    font-family: $special-font2;
+    color: $color-pale-3;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+  }
+}
+// ------------End Footer------------------------------------ //
+
+// ------------Menu------------------------------------ //
+// Table
 .menu__table {
   & tbody td {
     font-size: 1.3rem;
@@ -96,16 +164,30 @@ ul > li {
   }
 }
 hr {
-  border:1px solid $color-coffee-dark;
+  border: 1px solid $color-coffee-dark;
+  margin: 1rem 0.4rem;
 }
-//About
+// End Table
+// ------------ End Menu------------------------------------ //
+// ------------ Testimonials------------------------------------ //
+.testimonials{
+  &__show--big i {
+  color: $color-coffee-o;
+}
+} 
+// ------------ Upcoming------------------------------------ //
+.upcoming {
+  a:active,
+  a:link,
+  a:visited,
+  a::after,
+  a::before {
+    color: $color-pale-3;
+    text-decoration: none;
+  }
 
-//Contact
-
-//Footer
-
-//Menu
-
-//Testimonials
-
-//Upcoming
+  a:hover {
+    text-decoration: overline;
+  }
+}
+// ------------ End Upcoming------------------------------------ //

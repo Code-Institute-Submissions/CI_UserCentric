@@ -16,8 +16,24 @@ body {
   box-sizing: border-box;
 }
 
+span {
+  display: block;
+}
+
 html {
   font-family: "Encode Sans", sans-serif;
+}
+
+p {
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  line-height: 2.3rem;
+}
+
+.spacious {
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  line-height: 3rem;
 }
 
 ul > li {
@@ -25,6 +41,10 @@ ul > li {
   text-transform: uppercase;
   text-align: center;
   list-style-type: none;
+}
+
+[class^="col-"] {
+  font-size: 1.5rem;
 }
 
 .header__text-box {
@@ -35,7 +55,7 @@ ul > li {
 .header__top {
   font-size: 3rem;
   font-weight: 400;
-  letter-spacing: 1.2rem;
+  letter-spacing: 0.4rem;
   font-family: "Covered By Your Grace", sans-serif;
 }
 .header__mid {
@@ -45,21 +65,9 @@ ul > li {
   text-align: center;
   font-size: 1.5rem;
 }
-
-.nav ul > li a:active,
-.nav ul > li a:link,
-.nav ul > li a:visited,
-.nav ul > li a::after,
-.nav ul > li a::before {
-  color: #f0f0f0;
-  text-decoration: none;
-}
-.nav ul > li a:hover {
-  text-decoration: overline;
-}
-.nav__title {
-  font-family: "Covered By Your Grace", sans-serif;
-  font-size: 2rem;
+.header__btn:hover {
+  color: #3e240d;
+  letter-spacing: 0.4rem;
 }
 
 [class$="__header"] {
@@ -75,8 +83,58 @@ ul > li {
   text-decoration-color: #b65f44;
 }
 
-[class^="col-"] {
-  font-size: 1.5rem;
+.nav {
+  text-align: center;
+  color: #f0f0f0;
+}
+.nav ul > li a:active,
+.nav ul > li a:link,
+.nav ul > li a:visited,
+.nav ul > li a::after,
+.nav ul > li a::before {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+.nav ul > li a:hover {
+  text-decoration: overline;
+}
+.nav__title {
+  height: 2rem;
+  font-family: "Cormorant Upright";
+  font-size: 4rem;
+}
+
+.motto {
+  font-size: 4.5rem;
+  font-family: "Covered By Your Grace", sans-serif;
+}
+
+.about .empty {
+  display: none;
+}
+
+footer ul > li {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+}
+footer ul > li a:active,
+footer ul > li a:link,
+footer ul > li a:visited,
+footer ul > li a::after,
+footer ul > li a::before {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+footer ul > li a:hover {
+  text-decoration: overline;
+}
+footer h3 {
+  font-family: "Covered By Your Grace", sans-serif;
+  color: #f0f0f0;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
 }
 
 .menu__table tbody td {
@@ -98,6 +156,23 @@ ul > li {
 
 hr {
   border: 1px solid #3e240d;
+  margin: 1rem 0.4rem;
+}
+
+.testimonials__show--big i {
+  color: #b65f44;
+}
+
+.upcoming a:active,
+.upcoming a:link,
+.upcoming a:visited,
+.upcoming a::after,
+.upcoming a::before {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+.upcoming a:hover {
+  text-decoration: overline;
 }
 
 .about,
@@ -163,25 +238,41 @@ hr {
 }
 .container .pale--bg {
   background-color: #dfdcd3;
-  border: 2px solid #3e240d;
+  border: 2px solid #725037;
 }
 .container .col {
   padding: 2rem 2rem;
   display: block;
   width: 100%;
+  text-align: center;
+  margin: auto 0;
 }
 .container .col:not(:last-child) {
   margin-right: 5rem;
 }
 
-.center {
-  text-align: center;
-  margin: auto 0;
+.about__list li img {
+  width: 10.5rem;
+  border-radius: 50%;
+  padding: .3rem;
+}
+.about li {
+  display: inline-block;
+}
+.about .container__motto {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .contact__img img {
   border-radius: 50%;
   border: 4px solid #3e240d;
+  margin-top: 2rem;
+}
+.contact__list ul, .contact__list li img {
+  width: 10.5rem;
+  border-radius: 50%;
+  padding: .3rem;
 }
 
 footer {
@@ -194,35 +285,14 @@ footer {
   position: relative;
 }
 footer ul > li {
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  list-style-type: none;
   display: inline-block;
-  margin: .8rem;
-}
-footer ul > li a:active,
-footer ul > li a:link,
-footer ul > li a:visited,
-footer ul > li a::after,
-footer ul > li a::before {
-  color: #f0f0f0;
-  text-decoration: none;
-}
-footer ul > li a:hover {
-  text-decoration: overline;
-}
-footer h3 {
-  font-family: "Covered By Your Grace", sans-serif;
-  color: #f0f0f0;
-  letter-spacing: .3rem;
-  font-size: 2rem;
+  margin: 0.8rem;
 }
 
 .header {
   display: block;
   height: 90vh;
-  background-image: linear-gradient(to left top, rgba(169, 215, 238, 0.277), rgba(182, 95, 68, 0.563)), url(../images/bg3.jpg);
+  background-image: linear-gradient(to left top, rgba(169, 215, 238, 0.377), rgba(182, 95, 68, 0.763)), url(../images/bg3.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -233,18 +303,11 @@ footer h3 {
   left: 0;
   max-width: 80rem;
 }
-.header__top span, .header__mid span {
-  display: block;
-}
 .header__btn {
   position: absolute;
   left: 2rem;
   display: block;
   padding: 2rem;
-}
-.header__btn:hover {
-  color: #3e240d;
-  letter-spacing: 0.4rem;
 }
 
 .menu {
@@ -296,8 +359,8 @@ footer h3 {
 }
 .menu__table thead tr {
   position: absolute;
-  top: -9999px;
-  left: -9999px;
+  top: -99999px;
+  left: -99999px;
 }
 .menu__table thead th:first-child {
   border-left: none;
@@ -321,8 +384,6 @@ footer h3 {
   border: 0;
   z-index: 2;
   background-image: linear-gradient(to top, rgba(169, 215, 238, 0.277), rgba(182, 95, 68, 0.563));
-  text-align: center;
-  color: #f0f0f0;
 }
 .nav--top {
   position: fixed;
@@ -331,12 +392,7 @@ footer h3 {
 .nav h1 {
   display: none;
 }
-.nav__title {
-  height: 2rem;
-  font-family: "Cormorant Upright";
-  font-size: 4rem;
-}
-.nav__title, .nav li {
+.nav li {
   display: inline-block;
   margin: 2rem;
 }
@@ -371,21 +427,13 @@ footer h3 {
   margin: 1rem 0 1rem 0;
 }
 
-testimonials__span {
-  display: block;
+.testimonials__show--big {
+  display: none;
+}
+.testimonials img {
+  border-radius: 50%;
 }
 
-.upcoming a:active,
-.upcoming a:link,
-.upcoming a:visited,
-.upcoming a::after,
-.upcoming a::before {
-  color: #f0f0f0;
-  text-decoration: none;
-}
-.upcoming a:hover {
-  text-decoration: overline;
-}
 .upcoming h3 {
   padding: 2rem 0;
 }
@@ -393,7 +441,7 @@ testimonials__span {
   background-color: rgba(171, 159, 144, 0.431);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .btn--dropdown {
     display: none;
   }
@@ -413,7 +461,8 @@ testimonials__span {
   .container .col-2,
   .container .col-3,
   .container .col-6,
-  .container .col-4 {
+  .container .col-4,
+  .container .col-8 {
     float: left;
   }
   .container .col-2 {
@@ -424,6 +473,9 @@ testimonials__span {
   }
   .container .col-6 {
     width: calc((100% - 5rem) / 2);
+  }
+  .container .col-8 {
+    width: calc((100% - 5rem) / 1.5);
   }
   .container .col-4 {
     width: calc( (100% - 5rem * 2) / 3 );
@@ -479,6 +531,10 @@ testimonials__span {
   .menu__table th {
     display: table-cell;
     vertical-align: inherit;
+  }
+
+  .testimonials__show--big {
+    display: table-cell;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */

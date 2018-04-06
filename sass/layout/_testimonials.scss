@@ -1,5 +1,8 @@
-testimonials{
- &__span{
-     display: block;
- }
+.testimonials{
+&__show--big{
+    display:none;
+}
+img {
+    border-radius:50%;
+}
 }

@@ -3,8 +3,8 @@
     height: 90vh;
     background-image: linear-gradient(
         to left top,
-        rgba($color-denim-pale, 0.277),
-        rgba($color-coffee-o, 0.563)
+        rgba($color-denim-pale, 0.377),
+        rgba($color-coffee-o, 0.763)
       ),
       url(../images/bg3.jpg);
     background-size: cover;
@@ -18,10 +18,7 @@
       max-width: 80rem;
     }
   
-    &__top span,
-    &__mid span {
-      display: block;
-    }
+
   
     &__btn {
       position: absolute;
@@ -29,10 +26,7 @@
       display: block;
       padding: 2rem;
   
-      &:hover {
-        color: $color-coffee-dark;
-        letter-spacing: 0.4rem;
-      }
+
     }
   }
   

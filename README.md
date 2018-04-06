@@ -72,6 +72,7 @@ Present the concept of a coffee tasting experience workshop
 What these tests test and why
 ``` Media queries
 Screen sizes
+- Usage of DevTools within Chrome to adjust and permit match for mobile and desktop screens
 
 ```
 ### Browser compatibility

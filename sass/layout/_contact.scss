@@ -2,6 +2,11 @@
 &__img img{
     border-radius: 50%;
     border:4px solid $color-coffee-dark;
+    margin-top:2rem;
 }
-
+&__list ul, &__list li img {
+    width: 10.5rem;
+    border-radius: 50%;
+    padding:.3rem;
+  }
 }

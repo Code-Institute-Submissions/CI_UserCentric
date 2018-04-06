@@ -1,46 +1,19 @@
 footer {
-    border: none;
-    padding: 2rem 0;
-    display: block;
-    background-image: linear-gradient(
-        to left bottom,
-        rgba($color-denim, 0.777),
-        rgba($color-coffee-o, 0.763)
-      ),
-      url(../images/bg1.jpg);
-    background-size: stretch;
-    background-position: bottom;
-    position: relative;
+  border: none;
+  padding: 2rem 0;
+  display: block;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-denim, 0.777),
+      rgba($color-coffee-o, 0.763)
+    ),
+    url(../images/bg1.jpg);
+  background-size: stretch;
+  background-position: bottom;
+  position: relative;
 
-    & ul > li {
-      font-size: 2rem;
-      text-transform: uppercase;
-      text-align: center;
-      list-style-type: none;
-      display:inline-block;
-      margin: .8rem;
-
-      & a:active,
-      a:link,
-      a:visited,
-      a::after,
-      a::before {
-        color: $color-pale-3;
-        text-decoration: none;
-      }
-  
-      & a:hover {
-        text-decoration: overline;
-      }
-    }
-  
-    & h3 {
-      font-family: $special-font2;
-      color: $color-pale-3;
-      letter-spacing: .3rem;
-      font-size: 2rem;
-    }
-   
-  
+  & ul > li {
+    display: inline-block;
+    margin: 0.8rem;
   }
-  
+}

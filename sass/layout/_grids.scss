@@ -16,13 +16,15 @@
   }
   .pale--bg {
     background-color: $color-pale-2;
-    border: 2px solid $color-coffee-dark;
+    border: 2px solid $color-coffee;
   }
 
   .col {
     padding: 2rem 2rem;
     display: block;
     width: 100%;
+    text-align:center;
+    margin: auto 0;
 
     &:not(:last-child) {
       margin-right: $gutter-x;
@@ -30,8 +32,4 @@
   }
 
 
-}
-.center{
-  text-align: center;
-  margin: auto 0;
 }

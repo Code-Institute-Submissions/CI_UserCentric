@@ -1,17 +1,4 @@
 .upcoming {
-   a:active,
-    a:link,
-    a:visited,
-    a::after,
-    a::before {
-      color: $color-pale-3;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: overline;
-    }
-
     h3{
       padding:2rem 0;
     }
