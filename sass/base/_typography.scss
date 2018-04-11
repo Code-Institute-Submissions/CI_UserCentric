@@ -32,6 +32,21 @@ ul > li {
 [class^="col-"] {
   font-size: 1.5rem;
 }
+
+.upcoming, .menu, .header span {
+  a:active,
+  a:link,
+  a:visited,
+  a::after,
+  a::before {
+    color: $color-pale-3;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: overline;
+  }
+}
 // ------------End General------------------------------------ //
 
 // ------------Header ------------------------------------ //
@@ -183,18 +198,5 @@ footer {
   }
 }
 // ------------ Upcoming------------------------------------ //
-.upcoming {
-  a:active,
-  a:link,
-  a:visited,
-  a::after,
-  a::before {
-    color: $color-pale-3;
-    text-decoration: none;
-  }
 
-  a:hover {
-    text-decoration: overline;
-  }
-}
 // ------------ End Upcoming------------------------------------ //
