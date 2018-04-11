@@ -6,16 +6,17 @@
   margin-top: -2vh;
 }
 
-.about,
-.testimonials, .contact, footer {
+.about, .contact,
+.testimonials, footer {
   background-color: $color-pale-2;
 }
 
-.menu {
+
+.menu{
   background-color: $color-coffee-o;
 }
 
 .upcoming {
   background-color: $color-denim;
-  color:$color-pale-1;
+  color:$color-pale-2;
 }

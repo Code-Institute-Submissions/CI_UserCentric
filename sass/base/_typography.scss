@@ -3,6 +3,11 @@
 html {
   font-family: $main-font;
 }
+
+h1, h2, h3{
+  font-weight:300;
+}
+
 p {
   margin-top: 2rem;
   margin-bottom: 0.2rem;
@@ -147,17 +152,19 @@ footer {
   & tbody td {
     font-size: 1.3rem;
   }
+
+  & thead,
+  th {
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    color: $color-pale-2;
+    font-size: 1.5rem;
+    font-weight:400;
+  }
   & th:nth-child(3) {
     color: $color-coffee-dark;
     font-size: 1.1rem;
   }
-
-  & thead {
-    text-transform: uppercase;
-    letter-spacing: 0.4rem;
-    color: $color-pale-2;
-  }
-
   & h3 {
     font-family: $special-font1;
     font-size: 2rem;
@@ -170,11 +177,11 @@ hr {
 // End Table
 // ------------ End Menu------------------------------------ //
 // ------------ Testimonials------------------------------------ //
-.testimonials{
+.testimonials {
   &__show--big i {
-  color: $color-coffee-o;
+    color: $color-coffee-o;
+  }
 }
-} 
 // ------------ Upcoming------------------------------------ //
 .upcoming {
   a:active,

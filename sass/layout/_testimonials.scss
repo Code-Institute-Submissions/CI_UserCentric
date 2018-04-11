@@ -1,8 +1,22 @@
-.testimonials{
-&__show--big{
-    display:none;
-}
-img {
-    border-radius:50%;
-}
+.testimonials {
+  p {
+    color: $color-coffee-dark;
+  }
+
+  &__show--big {
+    display: none;
+  }
+  .round img {
+    border-radius: 50%;
+  }
+
+  background-image: linear-gradient(
+      to bottom left,
+      rgba($color-pale-2, 0.877),
+      rgba($color-pale-2, 0.863)
+    ),
+    url(../images/food1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }

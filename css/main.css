@@ -24,6 +24,10 @@ html {
   font-family: "Encode Sans", sans-serif;
 }
 
+h1, h2, h3 {
+  font-weight: 300;
+}
+
 p {
   margin-top: 2rem;
   margin-bottom: 0.2rem;
@@ -140,14 +144,17 @@ footer h3 {
 .menu__table tbody td {
   font-size: 1.3rem;
 }
-.menu__table th:nth-child(3) {
-  color: #3e240d;
-  font-size: 1.1rem;
-}
-.menu__table thead {
+.menu__table thead,
+.menu__table th {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   color: #dfdcd3;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.menu__table th:nth-child(3) {
+  color: #3e240d;
+  font-size: 1.1rem;
 }
 .menu__table h3 {
   font-family: "Cormorant Upright";
@@ -183,8 +190,8 @@ hr {
   margin-top: -2vh;
 }
 
-.about,
-.testimonials, .contact, footer {
+.about, .contact,
+.testimonials, footer {
   background-color: #dfdcd3;
 }
 
@@ -194,7 +201,7 @@ hr {
 
 .upcoming {
   background-color: #17354d;
-  color: #cbbc93;
+  color: #dfdcd3;
 }
 
 .btn:link, .btn:visited, .btn:active, .btn::after, .btn--dropdown {
@@ -211,7 +218,6 @@ hr {
   font-weight: 800;
 }
 .btn--dropdown {
-  border: none;
   width: 100vw;
   height: 7rem;
   font-size: 2rem;
@@ -246,6 +252,9 @@ hr {
   width: 100%;
   text-align: center;
   margin: auto 0;
+}
+.container .col p {
+  text-align: justify;
 }
 .container .col:not(:last-child) {
   margin-right: 5rem;
@@ -427,10 +436,19 @@ footer ul > li {
   margin: 1rem 0 1rem 0;
 }
 
+.testimonials {
+  background-image: linear-gradient(to bottom left, rgba(223, 220, 211, 0.877), rgba(223, 220, 211, 0.863)), url(../images/food1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.testimonials p {
+  color: #3e240d;
+}
 .testimonials__show--big {
   display: none;
 }
-.testimonials img {
+.testimonials .round img {
   border-radius: 50%;
 }
 
@@ -536,16 +554,4 @@ footer ul > li {
   .testimonials__show--big {
     display: table-cell;
   }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  /*something*/
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /*something*/
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  /*something*/
 }

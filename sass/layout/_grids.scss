@@ -25,6 +25,9 @@
     width: 100%;
     text-align:center;
     margin: auto 0;
+    p{
+      text-align:justify;
+    }
 
     &:not(:last-child) {
       margin-right: $gutter-x;
