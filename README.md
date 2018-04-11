@@ -5,12 +5,13 @@
 - ## Purpose of the project and UX approach  
 ### Strategy
 The purpose of this website is to advertise and inform potential customers about coffee tastings and coffee-related events. This website is the virtual access for customers to prepare their visit to the Dazzling Cafe. 
+
 ### Functionality of the Project
-Features to be included:
 
-- Pure CSS dropdown menu in mobile view
+Initially I intended to use Bootstrap or Flexbox to organise the content of the website, but then I came across a really interesting article regarding css grids using "calc()" [http://zerosixthree.se/create-css-grid-using-calc/]and [https://css-tricks.com/a-couple-of-use-cases-for-calc/]. I decided to try using this for the first project at least, for a personal challenge.
 
-- Full CSS image hover animation
+I wanted to use HTML and CSS only, but I really like to use SASS to organise the styles and keep track of what is left to do. I was inspired by [https://sass-guidelin.es/#architecture] SASS 7-1 file pattern.
+
 ### Structure 
 Header|About| Course/Tastings|Testimonials|Contact|Footer
 ---|---|---|---|---|---|
@@ -34,9 +35,7 @@ Screen sizes
 ```
 [http://browsershots.org/][http://www.webpagetest.org/]
 ```
-Initially I intended to use Bootstrap or Flexbox to organise the content of the website, but then I came across a really interesting article regarding css grids using "calc()" [http://zerosixthree.se/create-css-grid-using-calc/]and [https://css-tricks.com/a-couple-of-use-cases-for-calc/]. I decided to try using this for the first project at least, for a personal challenge.
 
-I wanted to use HTML and CSS only, but I really like to use SASS to organise the styles and keep track of what is left to do. I was inspired by [https://sass-guidelin.es/#architecture] SASS 7-1 file pattern.
 
 ## Library used and other resources
 
