@@ -24,17 +24,17 @@ Button leading to Testimonials||Allergy disclosure|Request for customer to leave
 |||||Email address (star barista and cafe owner)|
 
 ### Testing
--Mobile to desktop
-What these tests test and why
+- Mobile to desktop view compatibility
 ``` 
 Screen sizes
 - Usage of DevTools within Chrome to adjust and permit match for mobile and desktop screens
-Feedback from actual visitors
-- I requested honest feedback from friends and family members visiting the website via their mobile phone and computers 
+Feedback from actual visitors.
+- I requested honest feedback from friends and family members visiting the website via their mobile phone 
+and computers.
 
 ```
 ### Browser compatibility
-- What these tests mean and why
+- Making sure the website would look the same in most if not all of the common browsers used
 ```
 [http://browsershots.org/][http://www.webpagetest.org/]
 ```
