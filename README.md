@@ -16,6 +16,10 @@ Please review [the mobile wireframe](ux/mobile_usercentric.pdf) and [the desktop
 
 I wanted to use HTML and CSS only, but I really like to use SASS to organise the styles and keep track of what is left to do. I was inspired by [https://sass-guidelin.es/#architecture] SASS 7-1 file pattern.
 
+###Problems encountered and rules to work by
+* "If you have to explain, you're doing it wrong" -- forgot to add the 'Menu' or add a self-explanatory icon word to the top of the mobile view.
+* "Give the eyes a place to rest" -- use the white space more efficiently (I hope!)
+
 ### Structure 
 Header|About| Course/Tastings|Testimonials|Contact|Footer
 ---|---|---|---|---|---|
