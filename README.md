@@ -45,9 +45,10 @@ and computers.
 
 ## Library used and other resources
 
-* [/pixabay.com/] Pixelbay - Stock photos
-* [https://sass-guidelin.es/#architecture] SASS 7-1 file pattern 
-* [#] Code Institute - Pure CSS dropdown
+* [Pixelbay - Stock photos] (www.pixabay.com/) 
+* [SASS 7-1 file pattern] (https://sass-guidelin.es/#architecture) 
+* Code Institute - Pure CSS dropdown (no link as reference to a mini-project from the course)
+* [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### Contact
 vero@nuagesdencre.com
