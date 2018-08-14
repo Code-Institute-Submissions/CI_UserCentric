@@ -294,7 +294,6 @@ footer {
   padding: 2rem 0;
   display: block;
   background-image: linear-gradient(to left bottom, rgba(23, 53, 77, 0.777), rgba(182, 95, 68, 0.763)), url(../images/bg1.jpg);
-  background-size: stretch;
   background-position: bottom;
   position: relative;
 }
